@@ -11,23 +11,23 @@ https://sepolia.etherscan.io/address/0x3c9eA9e8066d630438516541640A711cC546eb00#
 
 O contrato permite interação por meio das seguintes funções:
 
-  depositFunds(): Funtion to deposit ether into the contract
-  withDrawFunds(): Function for withdraw ether from proprietary
-  SetannotationBank(): Function for set a string in proprietary account for a cost of 0.1 ether
-  infoBalanceContract(): Function to get contract balance and stats
-  getmaxAllowedCash(): Function to get max allowed cash for a user's withdraw
-  changeOwner(): Function to change the owner contract
+  depositFunds(): Funtion to deposit ether into the contract <br>
+  withDrawFunds(): Function for withdraw ether from proprietary <br>
+  SetannotationBank(): Function for set a string in proprietary account for a cost of 0.1 ether <br>
+  infoBalanceContract(): Function to get contract balance and stats <br>
+  getmaxAllowedCash(): Function to get max allowed cash for a user's withdraw <br>
+  changeOwner(): Function to change the owner contract <br>
 
 # Eventos
 
 O contrato possui os seguintes alertas de evento: 
 
-  event Deposited();
-  event AllowanceSet();
-  event Pulled();
-  event FallbackCalled();
-  event OwnerContractTransferred();
-  event MessageSet();
+  event Deposited(); <br>
+  event AllowanceSet(); <br>
+  event Pulled(); <br>
+  event FallbackCalled(); <br>
+  event OwnerContractTransferred(); <br>
+  event MessageSet(); <br>
 
 # Tutorial de Validação do Contrato
 
