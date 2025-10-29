@@ -1,29 +1,44 @@
 # kipu-bank
-O smart contract *kipuSafe* foi deployado na rede de teste SepoliaETH no seguinte endereço:
+O smart contract *kipuSafe* foi deployado na rede de teste *SepoliaETH* no seguinte endereço:
 ```
 0x3c9eA9e8066d630438516541640A711cC546eb00
 ```
-Pode ser consultado no explorador de blocos EtherScan:
+Pode ser consultado no explorador de blocos *EtherScan*:
 ```
 https://sepolia.etherscan.io/address/0x3c9eA9e8066d630438516541640A711cC546eb00#code
 ```
 # Interação com o contrato
 
-O contrato permite interação por meio das seguintes funções
+O contrato permite interação por meio das seguintes funções:
 
+  depositFunds(): Funtion to deposit ether into the contract
+  withDrawFunds(): Function for withdraw ether from proprietary
+  SetannotationBank(): Function for set a string in proprietary account for a cost of 0.1 ether
+  infoBalanceContract(): Function to get contract balance and stats
+  getmaxAllowedCash(): Function to get max allowed cash for a user's withdraw
+  changeOwner(): Function to change the owner contract
 
-# Alertas
+# Eventos
 
-O contrato possui os seguintes alertas
+O contrato possui os seguintes alertas de evento: 
 
+  event Deposited();
+  event AllowanceSet();
+  event Pulled();
+  event FallbackCalled();
+  event OwnerContractTransferred();
+  event MessageSet();
 
 # Tutorial de Validação do Contrato
 
-A validação é uma etapa importante pois garante que ...
+A validação é uma etapa importante pois gaante que o código-fonte de um contrato inteligente corresponde ao bytecode (código executável) que foi implantado na blockchain. Esse processo é fundamental para trazer transparência, segurança e confiabilidade aos usuários do contrato. 
 
-Comando para deployar o contrato na rede de teste SepoliaETH
+# Deploy
+
+Comando para deployar o contrato na rede de teste SepoliaETH:
+```
 npx hardhat run deploy.js --network sepolia
-
+```
 Após rodar o comando tem que realizar a verificação do contrato em
 
 sepolia.etherscan.io na aba de Contracts, 'Verify and ...'
