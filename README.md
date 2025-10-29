@@ -31,7 +31,7 @@ O contrato possui os seguintes alertas de evento:
 
 # Tutorial de Validação do Contrato
 
-A validação é uma etapa importante pois gaante que o código-fonte de um contrato inteligente corresponde ao bytecode (código executável) que foi implantado na blockchain. Esse processo é fundamental para trazer transparência, segurança e confiabilidade aos usuários do contrato. 
+A validação é uma etapa importante pois garante que o código-fonte de um contrato inteligente corresponde ao bytecode (código executável) que foi implantado na blockchain. Esse processo é fundamental para trazer transparência, segurança e confiabilidade aos usuários do contrato. 
 
 # Deploy
 
@@ -39,10 +39,34 @@ Comando para deployar o contrato na rede de teste SepoliaETH:
 ```
 npx hardhat run deploy.js --network sepolia
 ```
-Após rodar o comando tem que realizar a verificação do contrato em
+O endereço do contrato vai ser retornado após o comando.
 
-sepolia.etherscan.io na aba de Contracts, 'Verify and ...'
+# Verificação do Contrato
 
-Na aba de verificação a EVM Target deve ser especificada (Exemplo: 'EVM target: Paris')
+Após rodar o comando tem que realizar a verificação do contrato em sepolia.etherscan.io na aba de Contracts, clicar em 'Verify and Publish':
 
-O endereço do contrato vai ser retornado após o comando
+<p />
+<p align="center">
+<img src="https://github.com/lorenzoppx/kipu-bank/blob/main/images/ethscan.PNG" width="600">
+<p />
+
+Os detalhes de licença e versão devem ser especificados para avançar com a validação:
+
+<p />
+<p align="center">
+<img src="https://github.com/lorenzoppx/kipu-bank/blob/main/images/ethscan2.PNG" width="600">
+<p />
+
+Na segunda parte da verificação o código do contrato deve ser anexado:
+
+<p />
+<p align="center">
+<img src="https://github.com/lorenzoppx/kipu-bank/blob/main/images/ethscan3_1.PNG" width="600">
+<p />
+
+Na segunda parte da verificação a EVM Target deve ser especificada (Exemplo: 'EVM target: Paris'):
+
+<p />
+<p align="center">
+<img src="https://github.com/lorenzoppx/kipu-bank/blob/main/images/ethscan3_2.PNG" width="600">
+<p />
