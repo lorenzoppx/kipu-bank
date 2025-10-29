@@ -70,3 +70,5 @@ Na segunda parte da verificação a EVM Target deve ser especificada (Exemplo: '
 <p align="center">
 <img src="https://github.com/lorenzoppx/kipu-bank/blob/main/images/ethscan3_2.PNG" width="600">
 <p />
+
+Após a verificação do contrato aparecerá a opção de interação com o contrato.
